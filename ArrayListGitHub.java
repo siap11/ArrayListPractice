@@ -12,6 +12,16 @@ public class ArrayListGitHub{
 
 		return newList;
 	}
+
+	public static void printCommaMethod(ArrayList<Integer> list){
+
+		for(int i = 0; i < list.size(); i++){
+			System.out.print(list.get(i) + ",");
+		}
+
+		System.out.println();
+	}
+
 	public static void main(String[]args){
 
 		ArrayList<Integer> array1 = new ArrayList<>();
@@ -28,7 +38,18 @@ public class ArrayListGitHub{
 		array2.add(9);
 		array2.add(10);
 
+		System.out.println("Calling method: Combine Arrays");
 		System.out.println(combineArrays(array1, array2));
+
+		ArrayList<Integer> list = new ArrayList<>();
+		list.add(11);
+		list.add(12);
+		list.add(13);
+		list.add(14);
+
+		System.out.println("Calling method: printCommaMethod");
+		printCommaMethod(list);
+
 
 
 	}
